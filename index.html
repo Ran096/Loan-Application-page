@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <link rel='stylesheet' href='style.css' type='text/css' />
+    <link rel='html' href='confirm.html' type='text/html' />
+    <script src="applicationpage.js"></script>
+</head>
+
+<body>
+    <h1>Loan Application Page</h1>
+    <form name='registration'>
+        <ul>
+            <li><label for="fullname">Name:</label></li>
+            <li><input type="text" name="fullname" size="50" /></li>
+            <li><label for="email">Email:</label></li>
+            <li><input type="text" name="email" size="50" /></li>
+            <li><label class="fullname">Pan Number :</label></li>
+            <li><input name="txtPANCard" type="text" id="txtPANCard" class="PAN" /> </li><br />
+            <li><label >Loan Amount:</label></li>
+            <li><input id="Text1" type="text" onkeypress="return onlyNumbers(this.value);"
+            onkeyup="NumToWord(this.value,'divDisplayWords');" /> </li><br/>
+            <li><label id="divDisplayWords"class="LoanNumber" ></label></li>
+            
+            <li><input type="button" id="btnSubmit" value="Submit" onclick="formValidation()"onclick="generateOTP()" /></li>
+        </ul>
+        
+    </form>
+     
+</body>
+
+</html>
